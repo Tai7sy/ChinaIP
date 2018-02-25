@@ -2,7 +2,7 @@
 
 class chinaip
 {
-    function chinaip() {
+    function __construct() {
         header('content-type:text/html;charset=utf-8;');
         $this->path = dirname(__FILE__)."/class.chinaip.db";
         $content = file_get_contents($this->path);
